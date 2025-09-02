@@ -1,0 +1,26 @@
+:root{--teal:#14b8a6;--coral:#fb7185;--violet:#8b5cf6;--muted:#6b7280}
+*{box-sizing:border-box}body{font-family:Inter,ui-sans-serif,system-ui,Arial,sans-serif;margin:0;background:#fbfbfd;color:#0b1220}
+.header{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;background:linear-gradient(90deg,var(--teal),var(--violet));color:#fff}
+.header h1{margin:0;font-size:20px}
+.header .subtitle{font-size:13px;opacity:0.95}
+.container{max-width:980px;margin:18px auto;padding:0 16px 60px}
+.card{background:#fff;border-radius:12px;padding:14px;margin-bottom:14px;box-shadow:0 8px 28px rgba(12,20,30,.06)}
+.form-row{display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
+.small{font-size:13px;color:var(--muted)}
+.btn{padding:8px 12px;border-radius:10px;border:none;cursor:pointer;font-weight:700}
+.btn.primary{background:var(--teal);color:#fff}
+.btn.ghost{background:#f3f4f6;color:#111;border:1px solid #e6e7eb}
+.grid{display:grid;gap:12px}
+.metrics{grid-template-columns:repeat(4,1fr);margin-bottom:12px}
+.metric{background:linear-gradient(180deg,#fff,#fbfeff);padding:10px;border-radius:8px;text-align:center}
+.metric .big{font-size:20px;font-weight:800}
+.grid-2{grid-template-columns:1fr;gap:12px}
+@media(min-width:860px){.grid-2{grid-template-columns:1fr 1fr}}
+.smallCard{min-height:180px}
+.timer{font-size:40px;font-weight:800;text-align:center;padding:6px 0}
+.footer{position:fixed;left:0;right:0;bottom:0;background:#fff;padding:8px 12px;border-top:1px solid #eef2f5;text-align:center;color:#6b7280}
+#calendarGrid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:8px}
+.calendar-day{height:34px;border-radius:6px;border:1px dashed #eceff3;display:grid;place-items:center;font-weight:700}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px}
+.dot.green{background:#10b981}.dot.yellow{background:#f59e0b}.dot.white{background:#ffffff;border:1px solid #e6e7eb}.dot.purple{background:#c4b5fd}
+.raw-log{font-size:13px;padding:6px 0;border-bottom:1px solid #f1f5f9}
